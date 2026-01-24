@@ -36,34 +36,6 @@ DVLD/
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-* Visual Studio 2022 or later
-* .NET Framework / .NET SDK
-* SQL Server
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/DVLD-Desktop-App.git
-   ```
-
-2. Open the solution in **Visual Studio**
-
-3. Restore NuGet packages
-
-4. Create the database using the SQL scripts in `DVLD.Database`
-
-5. Update the connection string in `App.config`
-
-6. Run the application
-
----
-
 ## 🖼️ Screenshots
 
 > Screenshots will be added soon.
