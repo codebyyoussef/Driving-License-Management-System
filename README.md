@@ -31,13 +31,6 @@ DVLD/
 │── DVLD.UI          # Presentation Layer
 │── DVLD.BLL         # Business Logic Layer
 │── DVLD.DAL         # Data Access Layer
-```
-
----
-
-## 🖼️ Screenshots
-
-> Screenshots will be added soon.
 
 ---
 
