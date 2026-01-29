@@ -4,15 +4,14 @@
 
 ---
 
-## 📌 Features
+## Features
 
-* Driver management (Add / Update / Search)
-* License issuance and renewal
-* Driving tests management
-* User authentication and roles
-* Database integration (CRUD operations)
-* Clean, layered architecture (UI / Business Logic / Data Access)
-
+- Manage driving license applications
+- Support multiple application types (new local license, new international license, renew license, replace a lost or damaged license, retake a failed test, release a detained license)
+- Schedule driving test appointments
+- Handle driving test processes (vision, written, street)
+- Issue driving licenses
+- User-friendly desktop interface
 ---
 
 ## 🛠️ Technologies Used
