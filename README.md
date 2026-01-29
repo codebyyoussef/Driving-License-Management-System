@@ -55,18 +55,6 @@ This project was built after completing **19 programming courses** covering:
 
 ---
 
-## 🤝 Contribution
-
-This is a personal learning project. Suggestions and feedback are welcome.
-
----
-
-## 📄 License
-
-This project is for educational purposes only.
-
----
-
 ## 👤 Author
 
 **Youssef El Hassani**
@@ -74,7 +62,3 @@ Aspiring .NET & Web Developer
 
 * GitHub: [https://github.com/your-username](https://github.com/your-username)
 * LinkedIn: [https://linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-
----
-
-⭐ If you find this project helpful, feel free to give it a star!
