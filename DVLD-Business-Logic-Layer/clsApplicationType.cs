@@ -11,11 +11,11 @@ namespace DVLD_Business
 {
     public class clsApplicationType
     {
-        public int ID { get; set; }
+        public byte ID { get; set; }
         public string Title { get; set; }
         public decimal Fees { get; set; }
 
-        private clsApplicationType(int ID,  string title, decimal fees)
+        private clsApplicationType(byte ID,  string title, decimal fees)
         {
             this.ID = ID;
             this.Title = title; 
@@ -27,7 +27,7 @@ namespace DVLD_Business
             return clsApplicationTypeData.GetAllApplicationTypes();
         }
 
-        public static clsApplicationType Find(int ID)
+        public static clsApplicationType Find(byte ID)
         {
             string title = "";
             decimal fees = 0;

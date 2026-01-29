@@ -45,7 +45,7 @@ namespace DVLD_DataAccess
             return dt;
         }
 
-        public static bool GetApplicationTypeInfoByID(int applicationTypeID, ref string applicationTypeTitle, ref decimal applicationFees)
+        public static bool GetApplicationTypeInfoByID(byte applicationTypeID, ref string applicationTypeTitle, ref decimal applicationFees)
         {
             bool isFound = false;
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
@@ -85,7 +85,7 @@ namespace DVLD_DataAccess
             return isFound;
         }
 
-        public static bool UpdateApplicationTypeInfo(int applicationTypeID,  string applicationTypeTitle, decimal applicationFees)
+        public static bool UpdateApplicationTypeInfo(byte applicationTypeID,  string applicationTypeTitle, decimal applicationFees)
         {
             int rowsAffected = 0;
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);

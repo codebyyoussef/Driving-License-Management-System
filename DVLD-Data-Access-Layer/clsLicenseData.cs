@@ -40,10 +40,10 @@ namespace DataAccessLayer
                     isActive = (bool)reader["IsActive"];
                     issueReason = Convert.ToByte(reader["IssueReason"]);
                     createdByUserID = (int)reader["CreatedByUserID"];
-                    if (string.IsNullOrEmpty(reader["ExpirationDate"].ToString()))
+                    if (string.IsNullOrEmpty(reader["Notes"].ToString()))
                         notes = "";
                     else
-                        notes = reader["ExpirationDate"].ToString();
+                        notes = reader["Notes"].ToString();
                 }
                 else
                 {
@@ -238,7 +238,7 @@ namespace DataAccessLayer
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
             string query = @"update Licenses
-                             set IsActice = 0
+                             set IsActive = 0
                              where LicenseID = @LicenseID;";
 
             SqlCommand command = new SqlCommand(query, connection);

@@ -45,7 +45,7 @@ namespace DVLD_DataAccess
             return dt;
         }
 
-        public static bool GetLicenseClassInfoByID(int licenseClassID, ref string className, ref string classDescription, ref byte minimumAllowedAge,
+        public static bool GetLicenseClassInfoByID(byte licenseClassID, ref string className, ref string classDescription, ref byte minimumAllowedAge,
                                                    ref byte defaultValidityLength, ref decimal classFees)
         {
             bool isFound = false;
@@ -89,7 +89,7 @@ namespace DVLD_DataAccess
             return isFound;
         }
 
-        public static bool GetLicenseClassInfoByClassName(string className, ref int licenseClassID, ref string classDescription,
+        public static bool GetLicenseClassInfoByClassName(string className, ref byte licenseClassID, ref string classDescription,
                                                           ref byte minimumAllowedAge, ref byte defaultValidityLength, ref decimal classFees)
         {
             bool isFound = false;
@@ -109,11 +109,11 @@ namespace DVLD_DataAccess
                 {
                     isFound = true;
 
-                    licenseClassID = (int)reader["LicenseClassID"];
+                    licenseClassID = Convert.ToByte(reader["LicenseClassID"]);
                     classDescription = reader["ClassDescription"].ToString();
-                    minimumAllowedAge = (byte)reader["MinimumAllowedAge"];
-                    defaultValidityLength = (byte)reader["DefaultValidityLength"];
-                    classFees = (byte)reader["ClassFees"];
+                    minimumAllowedAge = Convert.ToByte(reader["MinimumAllowedAge"]);
+                    defaultValidityLength = Convert.ToByte(reader["DefaultValidityLength"]);
+                    classFees = Convert.ToByte(reader["ClassFees"]);
                 }
                 else
                 {
@@ -133,7 +133,7 @@ namespace DVLD_DataAccess
             return isFound;
         }
 
-        public static byte GetDefaultValididyLengthForLicenseClassID(byte  licenseClassID)
+        public static byte GetDefaultValididyLengthForLicenseClassID(byte licenseClassID)
         {
             byte defaultValidityLength = 0;
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);

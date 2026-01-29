@@ -80,6 +80,7 @@ namespace DVLD_Business
             IsActive = isActive;
             IssueReason = issueReason;
             CreatedByUserID = createdByUserID;
+            Notes = notes;
 
             //DetainedLicense = clsDetainedLicense.FindByLicenseID(LicenseID);
 
@@ -194,7 +195,89 @@ namespace DVLD_Business
             return clsLicenseData.DeactiveLicense(licenseID);
         }
 
+        public clsLicense RenewLicense(string notes, int createdByUserID)
+        {
+            clsApplication application = new clsApplication();
+            application.ApplicantPersonID = this.DriverInfo.PersonID;
+            application.ApplicationDate = DateTime.Now;
+            application.ApplicationTypeID = (byte)clsApplication.enApplicationType.RenewDrivingLicense;
+            application.ApplicationStatus = clsApplication.enApplicationStatus.Completed;
+            application.LastStatusDate = DateTime.Now;
+            application.PaidFees = clsApplicationType.Find((byte)clsApplication.enApplicationType.RenewDrivingLicense).Fees;
+            application.CreatedByUserID = createdByUserID;
 
+            if (application.Save())
+            {
+                clsLicense newLicense = new clsLicense();
+                newLicense.ApplicationID = application.ApplicationID;
+                newLicense.DriverID = this.DriverID;
+                newLicense.LicenseClassID = this.LicenseClassID;
+                newLicense.IssueDate = DateTime.Now;
+                newLicense.ExpirationDate = DateTime.Now.AddYears(this.LicenseClassInfo.DefaultValidityLength);
+                newLicense.Notes = notes.Trim();
+                newLicense.PaidFees = this.PaidFees;
+                newLicense.IsActive = true;
+                newLicense.IssueReason = enIssueReason.Renew;
+                newLicense.CreatedByUserID = createdByUserID;
 
+                if (DeactiveCurrentLicense())
+                {
+                    if (newLicense.Save())
+                    {
+                        return newLicense;
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        public clsLicense Replace(enIssueReason issueReason, int createdByUserID)
+        {
+            clsApplication application = new clsApplication();
+            application.ApplicantPersonID = this.DriverInfo.PersonID;
+            application.ApplicationDate = DateTime.Now;
+            application.ApplicationStatus = clsApplication.enApplicationStatus.Completed;
+            application.LastStatusDate = DateTime.Now;
+            application.CreatedByUserID = createdByUserID;
+
+            switch (issueReason)
+            {
+                case enIssueReason.ReplacementForDamaged:
+                    application.PaidFees = clsApplicationType.Find((byte)clsApplication.enApplicationType.ReplacementForADamagedDrivingLicense).Fees;
+                    application.ApplicationTypeID = (byte)clsApplication.enApplicationType.ReplacementForADamagedDrivingLicense;
+                    break;
+                case enIssueReason.ReplacementForLost:
+                    application.PaidFees = clsApplicationType.Find((byte)clsApplication.enApplicationType.ReplacementForALostDrivingLicense).Fees;
+                    application.ApplicationTypeID = (byte)clsApplication.enApplicationType.ReplacementForALostDrivingLicense;
+                    break;
+            }
+
+            if (application.Save())
+            {
+
+                clsLicense newLicense = new clsLicense();
+                newLicense.ApplicationID = application.ApplicationID;
+                newLicense.DriverID = this.DriverID;
+                newLicense.LicenseClassID = this.LicenseClassID;
+                newLicense.IssueDate = DateTime.Now;
+                newLicense.ExpirationDate = this.ExpirationDate;
+                newLicense.Notes = this.Notes;
+                newLicense.PaidFees = 0;
+                newLicense.IsActive = true;
+                newLicense.IssueReason = issueReason;
+                newLicense.CreatedByUserID = createdByUserID;
+
+                if (DeactiveCurrentLicense())
+                {
+                    if (newLicense.Save())
+                    {
+                        return newLicense;
+                    }
+                }
+            }
+
+            return null;
+        }
     }
 }

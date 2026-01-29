@@ -12,14 +12,14 @@ namespace DVLD_Business
     {
         public enum enLicenseClass { SmallMotorcycle = 1, HeavyMotorcycleLicense = 2, OrdinaryDrivingLicense = 3, Commercial = 4, Agricultural = 5, SmallAndMediumBus = 6, TruckAndHeavyVehicle = 7 };
 
-        public int LicenseClassID { get; set; }
+        public byte LicenseClassID { get; set; }
         public string ClassName { get; set; }
         public string ClassDescription { get; set; }
         public byte MimimumAllowedAge { get; set; }
         public byte DefaultValidityLength { get; set; }
         public decimal ClassFees { get; set; }
 
-        private clsLicenseClass(int licenseClassID, string className, string classDescription, byte mimimumAllowedAge, byte defaultValidityLength, decimal classFees)
+        private clsLicenseClass(byte licenseClassID, string className, string classDescription, byte mimimumAllowedAge, byte defaultValidityLength, decimal classFees)
         {
             LicenseClassID = licenseClassID;
             ClassName = className;
@@ -34,7 +34,7 @@ namespace DVLD_Business
             return clsLicenseClassData.GetAllLicenseClasses();
         }
 
-        public static clsLicenseClass Find(int licenseClassID)
+        public static clsLicenseClass Find(byte licenseClassID)
         {
             string className = ""; 
             string classDescription = "";
@@ -53,7 +53,7 @@ namespace DVLD_Business
 
         public static clsLicenseClass Find(string className)
         {
-            int licenseClassID = -1;
+            byte licenseClassID = 0;
             string classDescription = "";
             byte minimumAllowedAge = 18;
             byte defaultValidityLength = 10;
