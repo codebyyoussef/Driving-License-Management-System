@@ -1,6 +1,6 @@
 ﻿namespace DVLD.License
 {
-    partial class frmLicenseHistory
+    partial class frmShowPersonLicenseHistory
     {
         /// <summary>
         /// Required designer variable.
@@ -80,6 +80,7 @@
             this.ctrlPersonCardWithFilter.ShowAddPerson = true;
             this.ctrlPersonCardWithFilter.Size = new System.Drawing.Size(651, 314);
             this.ctrlPersonCardWithFilter.TabIndex = 3;
+            this.ctrlPersonCardWithFilter.OnPersonSelected += new System.Action<int>(this.ctrlPersonCardWithFilter_OnPersonSelected);
             // 
             // ctrlDriverLicenses1
             // 
@@ -88,7 +89,7 @@
             this.ctrlDriverLicenses1.Size = new System.Drawing.Size(800, 275);
             this.ctrlDriverLicenses1.TabIndex = 4;
             // 
-            // frmLicenseHistory
+            // frmShowPersonLicenseHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,9 +101,10 @@
             this.Controls.Add(this.ctrlPersonCardWithFilter);
             this.Controls.Add(this.ctrlDriverLicenses1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "frmLicenseHistory";
+            this.Name = "frmShowPersonLicenseHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "License History";
+            this.Activated += new System.EventHandler(this.frmShowPersonLicenseHistory_Activated);
             this.Load += new System.EventHandler(this.frmLicenseHistory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

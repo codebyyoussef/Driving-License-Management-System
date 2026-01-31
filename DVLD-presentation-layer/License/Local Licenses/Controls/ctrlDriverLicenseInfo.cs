@@ -42,8 +42,6 @@ namespace DVLD.License.Local_Licenses
             lblDateOfBirth.Text = _license.DriverInfo.PersonInfo.DateOfBirth.ToString("dd/MMM/yyyy");
             lblGendor.Text = _license.DriverInfo.PersonInfo.Gendor == 0 ? "Male" : "Female";
            
-
-
             // License Info
             clsLicenseClass.enLicenseClass licenseClassType = (clsLicenseClass.enLicenseClass)_license.LicenseClassID;
             switch (licenseClassType)
@@ -102,7 +100,7 @@ namespace DVLD.License.Local_Licenses
                     break;
             }
             lblIssueReason.Text = _license.IssueReasonText;
-            //lblIsDetained.Text = _license.IsDetained == true ? "Yes" : "No";
+            lblIsDetained.Text = _license.IsDetained == true ? "Yes" : "No";
             _LoadPersonImage();
         }
 

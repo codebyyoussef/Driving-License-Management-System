@@ -273,6 +273,16 @@ namespace DVLD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Detain {
+            get {
+                object obj = ResourceManager.GetObject("Detain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DetainedDrivingLicense {
             get {
                 object obj = ResourceManager.GetObject("DetainedDrivingLicense", resourceCulture);
@@ -683,6 +693,16 @@ namespace DVLD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Release {
+            get {
+                object obj = ResourceManager.GetObject("Release", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Renew {
             get {
                 object obj = ResourceManager.GetObject("Renew", resourceCulture);
@@ -776,6 +796,26 @@ namespace DVLD.Properties {
         internal static System.Drawing.Bitmap StatusNew {
             get {
                 object obj = ResourceManager.GetObject("StatusNew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stop {
+            get {
+                object obj = ResourceManager.GetObject("Stop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stop25X25 {
+            get {
+                object obj = ResourceManager.GetObject("Stop25X25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -70,6 +70,11 @@ namespace DVLD.People.Controls
             txtFilterValue.Focus();
         }
 
+        public void SelectAll()
+        {
+            txtFilterValue.SelectAll();
+        }
+
         private void FindNow()
         {
             switch(cbFilterBy.Text)

@@ -1,4 +1,6 @@
-﻿using DVLD_Business;
+﻿using DVLD.Applications.International_Driving_License;
+using DVLD.License;
+using DVLD_Business;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -108,6 +110,16 @@ namespace DVLD.Driver
             }
         }
 
+        private void mnuShowPersonInfo_Click(object sender, EventArgs e)
+        {
+            frmPersonDetails frm = new frmPersonDetails((int)dgvDrivers.CurrentRow.Cells[1].Value);
+            frm.ShowDialog();
+        }
 
+        private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory((int)dgvDrivers.CurrentRow.Cells[1].Value);
+            frm.ShowDialog();
+        }
     }
 }

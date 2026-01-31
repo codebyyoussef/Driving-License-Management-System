@@ -1,0 +1,9 @@
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\BusinessLogicLayer\obj\Debug\Business.450209FB.Up2Date
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

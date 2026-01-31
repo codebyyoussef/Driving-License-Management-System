@@ -97,7 +97,7 @@ namespace DataAccessLayer
             return dt;
         }
 
-        public static DataTable GetDriverLicenses(int driverID)
+        public static DataTable GetDriverLocalLicenses(int driverID)
         {
             DataTable dataTable = new DataTable();
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);

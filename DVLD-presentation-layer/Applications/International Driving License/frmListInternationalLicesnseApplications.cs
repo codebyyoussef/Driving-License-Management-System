@@ -182,7 +182,7 @@ namespace DVLD.License.International_Licenses
         {
             int driverID = (int)dgvInternationalDrivingLicenseApplications.CurrentRow.Cells[2].Value;
             int personID = clsDriver.FindDriverByDriverID(driverID).PersonID;
-            frmLicenseHistory frm = new frmLicenseHistory(personID);
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(personID);
             frm .ShowDialog();
         }
 

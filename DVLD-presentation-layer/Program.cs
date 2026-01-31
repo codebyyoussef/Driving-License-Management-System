@@ -1,6 +1,7 @@
 ﻿using DVLD.Applications.International_Driving_License;
 using DVLD.Applications.Local_Driving_License_Applications;
 using DVLD.Applications.Renew_Driving_license;
+using DVLD.License;
 using DVLD.Login;
 using DVLD.People;
 using DVLD.Tests;

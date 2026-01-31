@@ -21,6 +21,8 @@ using DVLD.Applications.International_Driving_License;
 using DVLD.License.International_Licenses;
 using DVLD.Applications.Renew_Driving_license;
 using DVLD.Applications.ReplaceLostOrDamagedLicense;
+using DVLD.Applications.Detain_License;
+using DVLD.Applications.Release_License;
 
 namespace DVLD
 {
@@ -153,6 +155,30 @@ namespace DVLD
         private void mnuReplacementForLostOrDamagedLicense_Click(object sender, EventArgs e)
         {
             frmReplaceLostOrDamagedLicenseApplication frm = new frmReplaceLostOrDamagedLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void mnuDetainLicense_Click(object sender, EventArgs e)
+        {
+            frmDetainLicenseApplication frm = new frmDetainLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void mnuReleaseLicense_Click(object sender, EventArgs e)
+        {
+            frmReleaseDetainedLicenseApplication frm = new frmReleaseDetainedLicenseApplication();  
+            frm.ShowDialog();
+        }
+
+        private void mnuManageDetainedLicenses_Click(object sender, EventArgs e)
+        {
+            frmListDetainedLicenses frm = new frmListDetainedLicenses();
+            frm.ShowDialog();
+        }
+
+        private void mnuReleaseDetainedLicense_Click(object sender, EventArgs e)
+        {
+            frmReleaseDetainedLicenseApplication frm = new frmReleaseDetainedLicenseApplication();
             frm.ShowDialog();
         }
     }

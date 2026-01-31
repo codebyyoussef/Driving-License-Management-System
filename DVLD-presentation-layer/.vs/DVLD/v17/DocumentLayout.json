@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\SBS\\Desktop\\Programming Fundamentals course\\19 - Full Real Project\\DVLD\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{117A413E-181A-4F83-B951-0E8F266692FE}|DVLD.csproj|c:\\users\\sbs\\desktop\\programming fundamentals course\\19 - full real project\\dvld\\dvld\\people\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{117A413E-181A-4F83-B951-0E8F266692FE}|DVLD.csproj|solutionrelative:people\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{117A413E-181A-4F83-B951-0E8F266692FE}|DVLD.csproj|c:\\users\\sbs\\desktop\\programming fundamentals course\\19 - full real project\\dvld\\dvld\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{117A413E-181A-4F83-B951-0E8F266692FE}|DVLD.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{117A413E-181A-4F83-B951-0E8F266692FE}|DVLD.csproj|c:\\users\\sbs\\desktop\\programming fundamentals course\\19 - full real project\\dvld\\dvld\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{117A413E-181A-4F83-B951-0E8F266692FE}|DVLD.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,13 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmManagePeople.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Programming Fundamentals course\\19 - Full Real Project\\DVLD\\DVLD\\People\\frmManagePeople.cs",
-              "RelativeDocumentMoniker": "People\\frmManagePeople.cs",
-              "ToolTip": "C:\\Users\\SBS\\Desktop\\Programming Fundamentals course\\19 - Full Real Project\\DVLD\\DVLD\\People\\frmManagePeople.cs [Design]",
-              "RelativeToolTip": "People\\frmManagePeople.cs [Design]",
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Programming Fundamentals course\\19 - Full Real Project\\DVLD\\DVLD\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\SBS\\Desktop\\Programming Fundamentals course\\19 - Full Real Project\\DVLD\\DVLD\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T09:40:35.353Z",
+              "WhenOpened": "2026-01-31T11:12:52.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Programming Fundamentals course\\19 - Full Real Project\\DVLD\\DVLD\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\SBS\\Desktop\\Programming Fundamentals course\\19 - Full Real Project\\DVLD\\DVLD\\frmMain.cs [Design]",
+              "RelativeToolTip": "frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T10:47:46.517Z",
               "EditorCaption": " [Design]"
             }
           ]
