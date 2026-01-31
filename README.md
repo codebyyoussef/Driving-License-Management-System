@@ -1,6 +1,6 @@
 # DVLD Desktop Application
 
-**DVLD (Driving & Vehicle License Department) Management System** is a desktop application built with **C# (.NET)** to manage driving licenses, drivers, tests, and related administrative processes. This project was developed as a **learning and portfolio project** to practice OOP, databases, and real‑world desktop application architecture.
+**DVLD (Driving & Vehicle License Department) Management System** is a desktop application built with C# (.NET) designed to manage driving licenses, drivers, and related administrative processes. The system supports multiple application types—including new licenses, renewals, replacements, and test scheduling—while maintaining records of tests, results, and applicant information. Developed as a learning and portfolio project, it demonstrates practical use of object-oriented programming, database management, and real-world desktop application architecture.
 
 ---
 
