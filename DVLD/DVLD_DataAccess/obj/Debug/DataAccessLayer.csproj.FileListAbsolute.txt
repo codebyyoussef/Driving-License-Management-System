@@ -1,0 +1,6 @@
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\SBS\Desktop\Programming Fundamentals course\19 - Full Real Project\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
